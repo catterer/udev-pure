@@ -8,10 +8,8 @@ set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -include config.h")
 include_directories("${CMAKE_SOURCE_DIR}" /usr/include/libmount)
 
 list(APPEND udev_sources
-#af-list.c
 alloc-util.c
 architecture.c
-#arphrd-list.c
 async.c
 audit-util.c
 barrier.c
@@ -22,7 +20,6 @@ btrfs-util.c
 bus-label.c
 calendarspec.c
 capability-util.c
-#cap-list.c
 cgroup-util.c
 chattr-util.c
 clock-util.c
@@ -34,7 +31,6 @@ device-nodes.c
 device-private.c
 dirent-util.c
 env-util.c
-#errno-list.c
 escape.c
 ether-addr-util.c
 exec-util.c
@@ -62,7 +58,6 @@ libudev-device.c
 libudev-device-private.c
 libudev-enumerate.c
 libudev-hwdb.c
-#libudev-list.c
 libudev-monitor.c
 libudev-queue.c
 libudev-util.c
@@ -100,8 +95,8 @@ signal-util.c
 siphash24.c
 smack-util.c
 socket-label.c
-#socket-protocol-list.c
 socket-util.c
+errno-list.c
 stat-util.c
 strbuf.c
 string-table.c
